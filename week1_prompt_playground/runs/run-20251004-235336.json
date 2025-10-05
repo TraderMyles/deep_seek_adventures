@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2025-10-04T23:53:36.197045+00:00",
+  "model": "deepseek-chat",
+  "temperature": 0.3,
+  "top_p": 1.0,
+  "max_tokens": 512,
+  "system": "You teach step-by-step, using simple language and examples.",
+  "user": "Summarize this in 5 bullet points:\n\nExplain AI agents in simple terms.",
+  "response": "Here are 5 key points explaining AI agents:\n\n*   **They are independent programs** that can perceive their environment (like data, a website, or a user's request).\n*   **They make decisions and take actions** to achieve a specific goal you give them (like booking a flight or summarizing a document).\n*   **They learn and adapt** from the results of their actions to improve their performance over time.\n*   **They can work automatically** without needing you to guide them through every single step.\n*   **Think of them as a smart assistant** that can handle a multi-step task for you from start to finish."
+}

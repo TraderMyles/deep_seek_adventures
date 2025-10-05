@@ -1,0 +1,10 @@
+{
+  "timestamp_utc": "2025-10-04T23:44:53.504425",
+  "model": "deepseek-chat",
+  "temperature": 0.3,
+  "top_p": 1.0,
+  "max_tokens": 512,
+  "system": "You are terse.",
+  "user": "Summarize RAG vs finetuning differences in 3 bullets.",
+  "response": "- **RAG** retrieves external knowledge at inference time, keeping the base model unchanged while dynamically augmenting responses with relevant information.  \n- **Finetuning** updates the model's internal weights through training on new data, adapting its behavior permanently but without real-time external data access.  \n- **Use case**: RAG excels when information is evolving or external; finetuning is better for adapting style, tone, or specific domain tasks with stable knowledge."
+}

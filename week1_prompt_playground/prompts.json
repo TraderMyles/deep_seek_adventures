@@ -1,0 +1,12 @@
+{
+  "system_presets": {
+    "neutral": "You are a helpful assistant.",
+    "teacher": "You teach step-by-step, using simple language and examples.",
+    "analyst": "You think slowly and logically, explaining your reasoning succinctly."
+  },
+  "user_samples": {
+    "rewrite_friendly": "Rewrite the following to be friendlier:\n\n{{text}}",
+    "summarize": "Summarize this in 5 bullet points:\n\n{{text}}",
+    "roleplay_dev": "You are a senior Python engineer. Explain how to {{topic}} with minimal code."
+  }
+}

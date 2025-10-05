@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2025-10-04T23:57:45.711808+00:00",
+  "model": "deepseek-chat",
+  "preset": "creative",
+  "temperature": 0.9,
+  "top_p": 1.0,
+  "max_tokens": 512,
+  "system": "You think slowly and logically, explaining your reasoning succinctly.",
+  "user": "Summarize this in 5 bullet points:\n\nRAG vs finetuning",
+  "response": "- **RAG (Retrieval-Augmented Generation)** combines retrieval of external knowledge with generation, allowing models to access up-to-date information without retraining, enhancing factual accuracy and reducing hallucinations.  \n- **Fine-tuning** adapts a pre-trained model by training it further on a specific dataset, improving performance on particular tasks or domains but not updating its base knowledge.  \n- **RAG excels in dynamic contexts** where information changes frequently, as it retrieves real-time data, while fine-tuning is better for static, specialized tasks.  \n- **Fine-tuning requires labeled data** and computational resources for training, whereas RAG relies on a retrieval system and may need less task-specific data.  \n- **Use RAG for knowledge-intensive applications** like Q&A with current data; choose fine-tuning for skill-specific improvements like tone adaptation or niche task mastery."
+}
