@@ -1,0 +1,36 @@
+{
+  "query": "Summarize the latest guidance on Xero API rate limits and cite sources.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a research assistant that answers with concise, well-structured responses. When you need fresh facts, call tools. Always cite sources with domain names when using search/fetch results. Prefer bullet points for lists."
+    },
+    {
+      "role": "user",
+      "content": "Summarize the latest guidance on Xero API rate limits and cite sources."
+    },
+    {
+      "role": "system",
+      "content": "Style rules: If you used tools, include a 'Sources:' section with domains.; Keep answers factual; avoid speculation.; If the question is ambiguous, ask one targeted clarifying question before proceeding."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_00_e1YPYmiM6zJdTL6w7Rew8rKT",
+          "type": "function",
+          "function": {
+            "name": "search",
+            "arguments": "{\"query\": \"Xero API rate limits 2024 latest guidance\", \"num_results\": 5}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_00_e1YPYmiM6zJdTL6w7Rew8rKT",
+      "content": "{\"results\": []}"
+    }
+  ],
+  "final": "<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>fetch<｜tool▁sep｜>{\"url\": \"https://developer.xero.com/documentation/api/requests-and-limits\"}<｜tool▁call▁end｜><｜tool▁calls▁end｜>"
+}

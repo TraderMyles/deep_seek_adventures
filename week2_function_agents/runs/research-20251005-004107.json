@@ -1,0 +1,36 @@
+{
+  "query": "Summarize the latest guidance on Xero API rate limits and cite sources.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a research assistant that answers with concise, well-structured responses. When you need fresh facts, call tools. Always cite sources with domain names when using search/fetch results. Prefer bullet points for lists."
+    },
+    {
+      "role": "user",
+      "content": "Summarize the latest guidance on Xero API rate limits and cite sources."
+    },
+    {
+      "role": "system",
+      "content": "Style rules: If you used tools, include a 'Sources:' section with domains.; Keep answers factual; avoid speculation.; If the question is ambiguous, ask one targeted clarifying question before proceeding."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_00_rzoGW36aJYIhEx3SEUzRHLue",
+          "type": "function",
+          "function": {
+            "name": "search",
+            "arguments": "{\"query\": \"Xero API rate limits 2024 latest guidance\", \"num_results\": 5}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_00_rzoGW36aJYIhEx3SEUzRHLue",
+      "content": "{\"results\": [{\"title\": \"Changelog — Xero Developer\", \"url\": \"https://developer.xero.com/changelog\", \"snippet\": \"Accounting API – We will be enforcing high volume threshold limits to key endpoints in the Accounting API, set to come into force from 1 September 2024. This will help to enhance the stability of our platform and provide a better experience for all users. These limits are similar to the limit that is already in place for the GET Payments endpoint.\\nThe proposed threshold limit will only be applicable to GET requests: [...] More information on how you can build to these models can be found at  Xer\"}, {\"title\": \"Xero API Essential Guide - Rollout\", \"url\": \"https://rollout.com/integration-guides/xero/api-essentials\", \"snippet\": \"- The concurrent limit is 5 calls in any 1-second period.\\n- This limit applies to requests made simultaneously or in quick succession.\\n\\n### Minute Limit\\n\\n- The minute limit is 60 calls per minute.\\n- This is an average rate, allowing for short bursts of activity as long as the overall rate doesn't exceed 60 calls per minute.\\n\\n### Daily Limit\\n\\n- The daily limit is 5000 calls per day.\\n- This limit resets at midnight UTC.\\n\\n### Additional Considerations [...] By using webhooks, you can build more res\"}, {\"title\": \"Rate Limits\", \"url\": \"https://developer.xero.com/documentation/best-practices/integration-health/rate-limits/\", \"snippet\": \"If two separateXeroorganisations are connected to your app, each connection would have 5000APIcalls available in a given 24 hour period, so one tenant hitting thelimitwill have no effect on others. ConcurrentLimit: 5 calls in progress at one time; MinuteLimit: 60 calls per minute; DailyLimit: 5000 calls per\"}, {\"title\": \"OAuth 2.0 API limits\", \"url\": \"https://developer.xero.com/documentation/guides/oauth2/limits/\", \"snippet\": \"There is no limit on connecting certified apps.API rate limits. There are limits to the number of API calls that your application can make against a particular tenant (organisation, account or practice):. Concurrent Limit: 5 calls in progress at one time; Minute Limit: 60 calls per minute; Daily Limit: 5000 calls per\"}, {\"title\": \"Overview\", \"url\": \"https://developer.xero.com/documentation/api/changelog/overview\", \"snippet\": \"Jul 26, 2024—This page keeps track of all future and previous changes that have occurred to theAPI, and what you need to do to ensure your integrations keep working.\"}]}"
+    }
+  ],
+  "final": "Based on the latest guidance, here are Xero's current API rate limits:\n\n**Standard Rate Limits (per tenant/organization):**\n- **Concurrent Limit:** 5 calls in progress at any given time\n- **Minute Limit:** 60 calls per minute (average rate)\n- **Daily Limit:** 5,000 calls per day (resets at midnight UTC)\n\n**Important Updates:**\n- **High Volume Threshold Limits:** Starting September 1, 2024, Xero will enforce additional limits on high-volume GET endpoints in the Accounting API to enhance platform stability\n- These new limits will be similar to the existing limit on the GET Payments endpoint\n- Each tenant connection has separate rate limits - hitting limits on one tenant won't affect others\n\n**Sources:**\n- developer.xero.com\n- rollout.com"
+}

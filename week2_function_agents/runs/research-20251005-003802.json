@@ -1,0 +1,36 @@
+{
+  "query": "Use search to find the official NOAA page on the Gulf of Mexico and give a 1-line summary with the domain.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a research assistant that answers with concise, well-structured responses. When you need fresh facts, call tools. Always cite sources with domain names when using search/fetch results. Prefer bullet points for lists."
+    },
+    {
+      "role": "user",
+      "content": "Use search to find the official NOAA page on the Gulf of Mexico and give a 1-line summary with the domain."
+    },
+    {
+      "role": "system",
+      "content": "Style rules: If you used tools, include a 'Sources:' section with domains.; Keep answers factual; avoid speculation.; If the question is ambiguous, ask one targeted clarifying question before proceeding."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_00_GRIgfNf5ty7ebL1wU7RmXjVg",
+          "type": "function",
+          "function": {
+            "name": "search",
+            "arguments": "{\"query\": \"NOAA official page Gulf of Mexico\", \"num_results\": 5}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_00_GRIgfNf5ty7ebL1wU7RmXjVg",
+      "content": "{\"results\": [{\"title\": \"NOAA's Gulf of Mexico Disaster Response Center\", \"url\": \"https://oceanservice.noaa.gov/hazards/drc/\", \"snippet\": \"NOAA's Gulf of Mexico Disaster Response Center\\n\\nSkip to feedback\\n\\nImage 1: U.S. flag An official website of the United States government. Here's how you know we're official.\\n\\n##### Official websites use .gov\\n\\nA .gov website belongs to an official government organization in the United States.\\n\\n##### Secure websites use HTTPS\\n\\nA small lock or  means you’ve safely connected to a .gov website. Share sensitive information only on official, secure websites. [...] NOAA's Gulf of Mexico Disaster Respons\"}, {\"title\": \"Gulf of America\", \"url\": \"https://www.aoml.noaa.gov/phod/gom/\", \"snippet\": \"The Gulf of America (also known as the Gulf of Mexico) is a semi-enclosed basin connected, to the south, to the Caribbean Sea, and to the North Atlantic Ocean to the east. The main dynamical feature of the Gulf of America is the Loop Current, which is a portion, upstream of the Gulf Stream, of the North Atlantic western boundary current that carries ocean waters from the Tropics towards the high latitudes. The Loop Current indeed carries warm waters from the Caribbean Sea into the colder Gulf [.\"}, {\"title\": \"Offshore Waters Forecast (Gulf of America)\", \"url\": \"https://www.nhc.noaa.gov/text/MIAOFFNT4.shtml\", \"snippet\": \"Offshore Waters Forecast (Gulf of America)\\n\\nImage 1: Skip Navigation Links\\n\\nHome\\n\\nMobile Site\\n\\nText Version\\n\\nRSS\\n\\nLocal Forecast\\n\\nImage 2: NOAAImage 3: NOAAImage 4: United States Department of Commerce\\n\\nNATIONAL HURRICANE CENTER and CENTRAL PACIFIC HURRICANE CENTER\\n\\nNational Oceanic and Atmospheric Administration\\n\\n   Analyses & Forecasts [...] Q & A with NHC\\n\\nNHC/AOML Library Branch\\n\\nNOAA: Hurricane FAQs\\n\\nNational Hurricane Operations Plan\\n\\nWX4NHC Amateur Radio\\n\\nNWS Forecast Offices\\n\\nWeather Pre\"}, {\"title\": \"National Weather Service Marine Forecast FZNT24 KNHC\", \"url\": \"https://www.ndbc.noaa.gov/data/Forecasts/FZNT24.KNHC.html\", \"snippet\": \"SAT NIGHT N winds 10 kt in the evening, becoming variable less than 5 kt. Seas 3 to 5 ft in NE swell.\\n\\nSUN Variable winds less than 5 kt. Seas 3 ft or less.\\n\\nSUN NIGHT Variable winds less than 5 kt. Seas 2 to 4 ft.\\n\\nGMZ049-010830Central Bay of Campeche429 PM EDT Tue Sep 30 2025\\n\\nTONIGHT W to NW winds 10 kt in the evening, becoming variable less than 5 kt. Seas 2 to 4 ft. Scattered showers and isolated tstms.\\n\\nWED S to SW winds 10 kt. Seas 3 ft or less. Scattered showers and isolated tstms. [...]\"}, {\"title\": \"Gulf Coast Marine Forecasts by Zone\", \"url\": \"https://www.weather.gov/marine/gulfmz\", \"snippet\": \"Products Via Email\\n\\nItems of Interest\\n  \\nAmateur Radio  \\nLatest News  \\nCoastal Warning Display Program\\n\\nProgram Information\\n  \\nPublications  \\nFeedback  \\nRecent Updates  \\nContacts  \\nAbout  \\nLinks  \\nSafety\\n\\nusa.gov\\n\\nUS Dept of Commerce  \\nNational Oceanic and Atmospheric Administration  \\nNational Weather Service  \\nMarine, Tropical and Tsunami Services Branch  \\n 1325 East-West Hwy, 13th floor  \\nCommunications Office  \\n Silver Spring, MD 20910\\n  \\n  \\n  \\nComments? Questions? Please Contact Us. [...] Na\"}]}"
+    }
+  ],
+  "final": "The official NOAA page for the Gulf of Mexico is the \"Gulf of America\" page, which provides scientific information about the Gulf's oceanography and dynamics.  \n**Sources:** aoml.noaa.gov"
+}

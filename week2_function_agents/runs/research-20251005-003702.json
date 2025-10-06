@@ -1,0 +1,36 @@
+{
+  "query": "Summarize the latest guidance on Xero API rate limits and cite sources.",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a research assistant that answers with concise, well-structured responses. When you need fresh facts, call tools. Always cite sources with domain names when using search/fetch results. Prefer bullet points for lists."
+    },
+    {
+      "role": "user",
+      "content": "Summarize the latest guidance on Xero API rate limits and cite sources."
+    },
+    {
+      "role": "system",
+      "content": "Style rules: If you used tools, include a 'Sources:' section with domains.; Keep answers factual; avoid speculation.; If the question is ambiguous, ask one targeted clarifying question before proceeding."
+    },
+    {
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "id": "call_00_DmF0EPbZrySrolQL7jlwuaYw",
+          "type": "function",
+          "function": {
+            "name": "search",
+            "arguments": "{\"query\": \"Xero API rate limits 2024 latest guidance\", \"num_results\": 5}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "tool",
+      "tool_call_id": "call_00_DmF0EPbZrySrolQL7jlwuaYw",
+      "content": "{\"results\": [{\"title\": \"Changelog — Xero Developer\", \"url\": \"https://developer.xero.com/changelog\", \"snippet\": \"Accounting API – We will be enforcing high volume threshold limits to key endpoints in the Accounting API, set to come into force from 1 September 2024. This will help to enhance the stability of our platform and provide a better experience for all users. These limits are similar to the limit that is already in place for the GET Payments endpoint.\\nThe proposed threshold limit will only be applicable to GET requests: [...] More information on how you can build to these models can be found at  Xer\"}, {\"title\": \"Rate Limits\", \"url\": \"https://developer.xero.com/documentation/best-practices/integration-health/rate-limits/\", \"snippet\": \"API rate limits· Concurrent Limit: 5 calls in progress at one time · Minute Limit: 60 calls per minute · Daily Limit: 5000 calls per day.\"}, {\"title\": \"OAuth 2.0 API limits\", \"url\": \"https://developer.xero.com/documentation/guides/oauth2/limits/\", \"snippet\": \"API rate limits· Concurrent Limit: 5 calls in progress at one time · Minute Limit: 60 calls per minute · Daily Limit: 5000 calls per day.\"}, {\"title\": \"Xero API Aging Reports: Overcome AR/AP Data Extraction ...\", \"url\": \"https://satvasolutions.com/blog/xero-api-aging-reports-ar-ap-data-extraction-limitations\", \"snippet\": \"Xero Developer Changelog July 2024 showing API pagination changes with pagesize of 1000 for all endpoints\\n\\n### Step 2: Create Aging Reports with SQL\\n\\nOnce the Xero database synchronization is complete, you can use SQL queries to generate aging reports. Here’s an example: [...] Satva Solutions Logo\\n\\n+1 415 802 0027\\n\\n# Xero API Aging Reports: Overcome AR/AP Data Extraction Limitations 2025\\n\\nPhoto of Author\\nVisual guide explaining Xero API limitations in Accounts Receivable and Payable with stats a\"}, {\"title\": \"Overview - Xero Developer\", \"url\": \"https://developer.xero.com/documentation/api/changelog/overview\", \"snippet\": \"This page keeps track of all future and previous changes that have occurred to the API, and what you need to do to ensure your integrations keep working.\"}]}"
+    }
+  ],
+  "final": "<｜tool▁calls▁begin｜><｜tool▁call▁begin｜>fetch<｜tool▁sep｜>{\"url\": \"https://developer.xero.com/documentation/best-practices/integration-health/rate-limits/\"}<｜tool▁call▁end｜><｜tool▁calls▁end｜>"
+}
